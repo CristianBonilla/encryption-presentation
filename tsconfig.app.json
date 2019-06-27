@@ -1,8 +1,31 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "baseUrl": "./",
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [
+      "node",
+      "jquery",
+      "bootstrap",
+      "bootstrap-notify"
+    ],
+    "paths": {
+      "@env/*": [
+        "src/environments/*"
+      ],
+      "@shared/*": [
+        "src/app/shared/*"
+      ],
+      "@view/*": [
+        "src/app/views/components/*"
+      ],
+      "@core/*": [
+        "src/app/core/*"
+      ],
+      "@module/*": [
+        "src/app/modules/*"
+      ]
+    }
   },
   "include": [
     "src/**/*.ts"

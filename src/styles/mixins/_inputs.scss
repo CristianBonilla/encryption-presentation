@@ -1,0 +1,133 @@
+@mixin transition-input-focus-color() {
+  -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+@mixin input-size($padding-vertical, $padding-horizontal) {
+  padding: $padding-vertical $padding-horizontal;
+}
+
+@mixin form-control-placeholder($color, $opacity) {
+  .form-control::-moz-placeholder {
+    color: $color;
+    @include opacity(1);
+  }
+
+  .form-control:-moz-placeholder {
+    color: $color;
+    @include opacity(1);
+  }
+
+  .form-control::-webkit-input-placeholder {
+    color: $color;
+    @include opacity(1);
+  }
+
+  .form-control:-ms-input-placeholder {
+    color: $color;
+    @include opacity(1);
+  }
+}
+
+@mixin placeholder() {
+
+  // Firefox
+  &::-moz-placeholder {
+    @content;
+  }
+
+  // Internet Explorer 10+
+  &:-ms-input-placeholder {
+    @content;
+  }
+
+  // Safari and Chrome
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+@mixin form-control-lg-padding($padding-vertical, $padding-horizontal) {
+
+  .form-group.no-border.form-control-lg,
+  .input-group.no-border.form-control-lg {
+    .input-group-append .input-group-text {
+      padding: $padding-vertical 0 $padding-vertical $padding-horizontal;
+    }
+
+    .form-control {
+      padding: $padding-vertical $padding-horizontal;
+
+      &+.input-group-prepend .input-group-text,
+      &+.input-group-append .input-group-text {
+        padding: $padding-vertical $padding-horizontal $padding-vertical 0;
+      }
+    }
+  }
+
+  .form-group.form-control-lg,
+  .input-group.form-control-lg {
+    .form-control {
+      padding: $padding-vertical - 1 $padding-horizontal - 1;
+
+      &+.input-group-prepend .input-group-text,
+      &+.input-group-append .input-group-text {
+        padding: $padding-vertical - 1 $padding-horizontal - 1 $padding-vertical - 1 0;
+      }
+    }
+
+    .input-group-prepend .input-group-text,
+    .input-group-append .input-group-text {
+      padding: $padding-vertical - 1 0 $padding-vertical $padding-horizontal - 1;
+
+      &+.form-control {
+        padding: $padding-vertical $padding-horizontal - 1 $padding-vertical $padding-horizontal - 3;
+      }
+    }
+  }
+}
+
+@mixin input-base-padding($padding-vertical, $padding-horizontal) {
+
+  .form-group.no-border,
+  .input-group.no-border {
+    .form-control {
+      padding: $padding-vertical $padding-horizontal;
+
+      &+.input-group-prepend .input-group-text,
+      &+.input-group-append .input-group-text {
+        padding: $padding-vertical $padding-horizontal $padding-vertical 0;
+      }
+    }
+
+    .input-group-prepend .input-group-text,
+    .input-group-append .input-group-text {
+      padding: $padding-vertical 0 $padding-vertical $padding-horizontal;
+    }
+  }
+
+  .form-group,
+  .input-group {
+    .form-control {
+      padding: $padding-vertical - 1 $padding-horizontal - 1 $padding-vertical - 1 $padding-horizontal - 1;
+
+      &+.input-group-prepend .input-group-text,
+      &+.input-group-append .input-group-text {
+        padding: $padding-vertical - 1 $padding-horizontal - 1 $padding-vertical - 1 0;
+      }
+    }
+
+    .input-group-prepend .input-group-text,
+    .input-group-append .input-group-text {
+      padding: $padding-vertical - 1 0 $padding-vertical - 1 $padding-horizontal - 1;
+
+      &+.form-control,
+      &~.form-control {
+        padding: $padding-vertical - 1 $padding-horizontal $padding-vertical $padding-horizontal - 3;
+      }
+    }
+  }
+}

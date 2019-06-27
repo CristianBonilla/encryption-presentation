@@ -1,0 +1,42 @@
+.scrollbar-on {
+
+  .sidebar,
+  .main-panel {
+    height: 100%;
+    max-height: 100%;
+  }
+}
+
+.ps {
+
+  .ps__rail-x,
+  .ps__rail-y {
+
+    >.ps__thumb-x,
+    >.ps__thumb-y {
+      background-color: #414141;
+      width: 8;
+    }
+
+    &.ps--clicking,
+    &:hover {
+      background-color: transparent;
+
+      >.ps__thumb-x,
+      >.ps__thumb-y {
+        width: 8px;
+      }
+    }
+
+    &.ps--clicking,
+    &.ps--clicking,
+    &:focus {
+
+      >.ps__thumb-x,
+      >.ps__thumb-y {
+        background-color: #242424;
+        width: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<div class="sidebar" data-color="blue" #sidebar>
+  <div class="logo">
+    <a class="simple-text logo-mini" href="/" [routerLink]="[ '/' ]">
+      <fa-icon [icon]="[ 'fas', 'book' ]" size="2x"></fa-icon>
+    </a>
+    <a class="simple-text logo-normal" href="/" [routerLink]="[ '/' ]">
+      Documentos
+    </a>
+    <div class="navbar-minimize">
+      <button id="minimizeSidebar" class="btn btn-simple btn-icon btn-neutral btn-round" (click)="minimize()">
+        <fa-icon class="visible-on-sidebar-regular" [icon]="[ 'fas', 'align-right' ]" size="lg"></fa-icon>
+        <fa-icon class="visible-on-sidebar-mini" [icon]="[ 'fas', 'align-justify' ]" size="lg"></fa-icon>
+      </button>
+    </div>
+  </div>
+  <de-sidebar-wrapper></de-sidebar-wrapper>
+</div>

@@ -1,0 +1,136 @@
+$sans-serif-family: 'Montserrat',
+'Helvetica Neue',
+Arial,
+sans-serif;
+
+$none: 0 !default;
+
+$default-color: #888 !default;
+$default-states-color: lighten($default-color, 6%) !default;
+$default-color-opacity: rgba(182, 182, 182, .6) !default;
+
+$primary-color: #3877ff !default;
+$primary-states-color: lighten($primary-color, 6%) !default;
+
+$orange-color: #f96332 !default;
+$orange-states-color: lighten($orange-color, 6%) !default;
+
+$info-color: #2CA8FF !default;
+$info-states-color: lighten($info-color, 6%) !default;
+
+$success-color: #18ce0f !default;
+$success-states-color: lighten($success-color, 6%) !default;
+
+$danger-color: #FF3636 !default;
+$danger-states-color: lighten($danger-color, 6%) !default;
+
+$warning-color: #FFB236 !default;
+$warning-states-color: lighten($warning-color, 6%) !default;
+
+$white-color: #FFFFFF !default;
+$white-bg: #FFFFFF !default;
+
+$black-color: #2c2c2c !default;
+
+$orange-color: #f96332 !default;
+
+$light-gray: #E3E3E3 !default;
+$medium-gray: #DDDDDD !default;
+$dark-gray: #9A9A9A !default;
+
+$border: 1px solid !default;
+$border-thin: 1px !default;
+$border-thick: 2px !default;
+
+$navbar-padding-base: 0.625rem;
+
+$padding-base-vertical: .5rem !default;
+$padding-base-horizontal: .7rem !default;
+
+$padding-btn-vertical: 11px !default;
+$padding-btn-horizontal: 22px !default;
+
+$padding-large-vertical: 15px !default;
+$padding-large-horizontal: 48px !default;
+
+$padding-small-vertical: 5px !default;
+$padding-small-horizontal: 15px !default;
+
+$padding-round-horizontal: 23px !default;
+
+$padding-input-vertical: 11px !default;
+$padding-input-horizontal: 19px !default;
+
+$margin-base-vertical: 15px !default;
+
+$font-size-base: 14px !default;
+$font-size-mini: 0.7142em !default;
+$font-size-small: 0.8571em !default;
+$font-size-large: 1em !default;
+$font-size-blockquote: 1.1em !default; // ~ 15px
+
+$font-size-h1: 3.5em !default; // ~ 49px
+$font-size-h2: 2.5em !default; // ~ 35px
+$font-size-h3: 2em !default; // ~ 28px
+$font-size-h4: 1.714em !default; // ~ 24px
+$font-size-h5: 1.57em !default; // ~ 22px
+$font-size-h6: 1em !default; // ~ 14px
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+
+$line-height: 1.35em !default;
+$line-height-nav-link: 1.625rem !default;
+
+$opacity-1: rgba(255, 255, 255, .1) !default;
+$opacity-2: rgba(255, 255, 255, .2) !default;
+$opacity-5: rgba(255, 255, 255, .5) !default;
+$opacity-8: rgba(255, 255, 255, .8) !default;
+$opacity-gray-3: rgba(222, 222, 222, .3) !default;
+$opacity-gray-5: rgba(222, 222, 222, .5) !default;
+$opacity-gray-8: rgba(222, 222, 222, .8) !default;
+
+$brand-primary: $primary-color !default;
+$brand-info: $info-color !default;
+$brand-success: $success-color !default;
+$brand-warning: $warning-color !default;
+$brand-danger: $danger-color !default;
+
+$border-radius-extra-small: 0.125rem !default;
+$border-radius-small: 0.1875rem !default;
+$border-radius-large: 0.25rem !default;
+
+$transparent-bg: transparent !default;
+
+$box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.1);
+$sidebar-box-shadow: 0px 2px 22px 0 rgba(0, 0, 0, .20),
+0px 2px 30px 0 rgba(0, 0, 0, .35);
+
+$btn-round-radius: 30px !default;
+
+$btn-icon-size-small: 1.875rem !default;
+$btn-icon-size-regular: 2.375rem !default;
+$btn-icon-size-lg: 3.6rem !default;
+$btn-icon-font-size-small: 0.6875rem !default;
+$btn-icon-font-size-regular: 0.9375rem !default;
+$btn-icon-font-size-lg: 1.325rem !default;
+
+$general-transition-time: 300ms !default;
+
+$transition-ease: ease 0s;
+
+$fast-transition-time: 150ms !default;
+
+$transition-linear: linear !default;
+
+$box-shadow-raised: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+
+$sidebar-width: calc(100% - 260px) !default;
+$sidebar-mini-width: calc(100% - 80px) !default;
+
+$topbar-x: topbar-x !default;
+$topbar-back: topbar-back !default;
+
+$bottombar-x: bottombar-x !default;
+$bottombar-back: bottombar-back !default;

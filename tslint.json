@@ -11,7 +11,7 @@
     "directive-class-suffix": true,
     "directive-selector": [
       true,
-      "attribute",
+      ["element", "attribute"],
       "de",
       "camelCase"
     ],

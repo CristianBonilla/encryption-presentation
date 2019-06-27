@@ -30,9 +30,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/animate.css/animate.min.css",
+              "node_modules/overlayscrollbars/css/OverlayScrollbars.min.css",
+              "src/styles/_main.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/bootstrap-notify/bootstrap-notify.min.js",
+              "node_modules/overlayscrollbars/js/OverlayScrollbars.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -92,9 +101,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/animate.css/animate.min.css",
+              "node_modules/overlayscrollbars/css/OverlayScrollbars.min.css",
+              "src/styles/_main.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/bootstrap-notify/bootstrap-notify.min.js",
+              "node_modules/overlayscrollbars/js/OverlayScrollbars.min.js"
+            ]
           }
         },
         "lint": {

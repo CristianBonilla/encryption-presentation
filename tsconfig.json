@@ -14,6 +14,23 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    "paths": {
+      "@env/*": [
+        "src/environments/*"
+      ],
+      "@shared/*": [
+        "src/app/shared/*"
+      ],
+      "@view/*": [
+        "src/app/views/components/*"
+      ],
+      "@core/*": [
+        "src/app/core/*"
+      ],
+      "@module/*": [
+        "src/app/modules/*"
+      ]
+    },
     "lib": [
       "es2018",
       "dom"
