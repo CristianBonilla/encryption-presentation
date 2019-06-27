@@ -68,6 +68,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
   }
 
   validateName() {
+    this.name = this.name.trim();
     const name = this.name.length;
     if (name < 3) {
       this.validName = {
@@ -75,7 +76,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
         message: 'El nombre de entrada debe ser mayor o igual a 3 dígitos'
       };
     } else {
-      const expr = /^[a-zA-Z]+\s*$/;
+      const expr = /^[a-zA-Z]+\s*[a-zA-Z]+$/;
       if (!expr.test(this.name)) {
         this.validName = {
           isValid: false,
