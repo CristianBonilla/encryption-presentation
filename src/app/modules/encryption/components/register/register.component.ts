@@ -91,15 +91,11 @@ export class RegisterComponent implements OnInit, OnDestroy {
     }
   }
 
-  send(element: HTMLElement, form: NgForm) {
+  send(form: NgForm) {
     if (!this.document || isNaN(this.document)) {
       this.validateDocument();
     }
     this.validateName();
-    this.registerService.sendDocument({
-      documentEncrypted: this.documentEncrypted,
-      name: this.name
-    }).subscribe();
     if (this.validDocument.isValid && this.validName.isValid) {
       const subscription = this.registerService.sendDocument({
         documentEncrypted: this.documentEncrypted,
